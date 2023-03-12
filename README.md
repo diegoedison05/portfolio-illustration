@@ -6,6 +6,12 @@ Se irá documentando la evolución del mismo, ya que comenzaré su desarrollo co
 
 ## Caracteristicas - versiones
 
-### 0.1.0 (/03/23)
+### 0.1.0 (12/03/23)
 
 -   Se utilizó los mismos archivos de project-tech, se cambiaron los colores y se eliminaron 'Sobre mí' y 'Habilidades', igualmente se modificaron algunos estilos de 'Proyectos' y 'Contacto'.
+
+### 0.2.0 (12/03/23)
+
+-   Las imagenes de los proyectos pueden ser cliqueadas para verse un poco más grandes superpuestas en toda la página web.
+
+-   Se eliminó el archivo 'survey-form' html y css, también la carpeta 'mockup'.
