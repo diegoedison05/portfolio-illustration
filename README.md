@@ -19,3 +19,7 @@ Se irá documentando la evolución del mismo, ya que comenzaré su desarrollo co
 ### 0.2.1 (12/03/23)
 
 -   Se eliminó el archivo pdf del cv.
+
+### 0.2.2 (12/03/23)
+
+-   Se cambiaron las imagenes de los proyectos, se eliminó la foto y el nombre en el inicio de la página.
