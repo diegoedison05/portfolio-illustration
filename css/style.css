@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --------------------------root------------------------ */
+:root {
+    --black: #10100F;
+    --white: #F4F9FC;
+    --gray1: #D6DFE8;
+    --gray2: #D9D9D9;
+    --grayDark: #626461;
+    --red: #F60030;
+    --redDark: #AC011C;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --xl: 24px
+}
+
+/* -------------------General--------------------------------- */
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--md);
+}
+
+/* ----------------------navbar---------------------------------*/
+header {
+    background-color: var(--black);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 0 24px;
+    /* border-bottom: 1px solid var(--red); */
+}
+
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-right ul li a {
+    text-decoration: none;
+    color: var(--white);
+    /* border: 1px solid var(--white); */
+    padding: 8px;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar-right a:hover {
+    border: 1px solid var(--white);
+}
+
+/* --------------------------inicio------------------- */
+.div-avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: 'Caveat Brush', cursive; */
+
+}
+
+.avatar {
+    width: 300px;
+    margin: 90px 0 40px 0;
+    border-radius: 35px;
+}
+
+.nombre {
+    font-size: var(--xl);
+    /* color: var(--grayDark); */
+    /* padding-bottom: 100px; */
+}
+
+.profesion {
+    font-size: var(--xl);
+    /* color: var(--grayDark); */
+    padding: 10px 0 100px;
+}
+
+/* ---------------------------about me------------------------ */
+.about-me {
+    /* background-color: rgba(62, 64, 61, 0.1); */
+    background-color: var(--gray1);
+    padding: 60px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-about {
+    height: 300px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-title {
+    color: var(--black);
+    font-size: var(--lg);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.description {
+    padding-bottom: 25px;
+    text-align: justify;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.downcv {
+    width: 130px;
+    height: 30px;
+    background-color: var(--black);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: var(--);
+    font-weight: normal;
+    text-align: center;
+}
+
+/* .downcv a {
+    text-decoration: none;
+    color: var(--white);
+} */
+
+.about-img {
+    width: 250px;
+    margin: 50px 0 50px 30px;
+    border-radius: 35px;
+    box-sizing: content-box;
+}
+
+/* --------------------------projects cards---------------------- */
+.section-project {
+    padding: 7% 5%;
+    box-sizing: content-box;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 20px;
+    place-content: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    /* background-color: rgba(62, 64, 61, 0.1); */
+    background-color: var(--gray2);
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 250px;
+    height: 200px;
+    /* border-radius: 10px 10px 0 0; */
+    /* object-fit: cover; */
+    /*Evitar que la imagen se distorcione el tamaño*/
+    /* filter: grayscale(100); */
+}
+
+.project-card img:hover {
+    filter: grayscale(0);
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+.project-info h2 {
+    padding: 5px 0 9px;
+    box-sizing: content-box;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+.project-info p {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: var(--sm);
+    font-weight: normal;
+}
+
+.link-container {
+    text-align: center;
+    margin: 5px;
+}
+
+.link-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.link-container a {
+    color: var(--black);
+}
+
+.link-container a:nth-child(1) {
+    margin-right: 20px;
+}
+
+/* -------------------skills------------------------- */
+.section-skills {
+    /* background-color: rgba(62, 64, 61, 0.1); */
+    background-color: var(--gray1);
+    padding: 7% 15%;
+    box-sizing: content-box;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    /* gap: 26px; */
+    place-content: center;
+}
+
+.skills-card {
+    width: 100px;
+    /* background-color: var(--black); */
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.skills-card img {
+    /* width: 134px; */
+    /* filter: grayscale(100); */
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    /*Evitar que la imagen se distorcione el tamaño*/
+}
+
+.skills-card img:hover {
+    filter: grayscale(0);
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+/* ----------------------contact------------------ */
+.section-contact {
+    /* background-color: rgba(62, 64, 61, 0.1); */
+    padding: 2% 15%;
+    box-sizing: content-box;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 20px;
+    place-content: center;
+}
+
+.section-contact img {
+    width: 32px;
+    margin-bottom: 5px;
+}
+
+.contact-card {
+    width: 100px;
+    /* background-color: var(--black); */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.contact-link a {
+    color: var(--black);
+}
+
+/* -----------------------footer------------------ */
+footer {
+    /* background-color: rgba(62, 64, 61, 0.1); */
+    background-color: var(--gray2);
+    padding: 10px 15%;
+    box-sizing: content-box;
+    font-size: var(--sm);
+    text-align: center;
+    color: var(--grayDark);
+}
+
+footer div, .footer-link {
+    margin-top: 10px;
+    color: var(--grayDark);
+}
