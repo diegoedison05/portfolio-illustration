@@ -15,3 +15,7 @@ Se irá documentando la evolución del mismo, ya que comenzaré su desarrollo co
 -   Las imagenes de los proyectos pueden ser cliqueadas para verse un poco más grandes superpuestas en toda la página web.
 
 -   Se eliminó el archivo 'survey-form' html y css, también la carpeta 'mockup'.
+
+### 0.2.1 (12/03/23)
+
+-   Se eliminó el archivo pdf del cv.
