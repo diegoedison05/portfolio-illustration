@@ -23,3 +23,7 @@ Se irá documentando la evolución del mismo, ya que comenzaré su desarrollo co
 ### 0.2.2 (12/03/23)
 
 -   Se cambiaron las imagenes de los proyectos, se eliminó la foto y el nombre en el inicio de la página.
+
+### 0.3.0 (13/03/23)
+
+-   Se agrego una descripción de la página web al inicio de la misma, se cambió el avatar, se eliminó el botón para descargar el cv e igualmente se eliminó el archivo cv y se agrego otra project-card.

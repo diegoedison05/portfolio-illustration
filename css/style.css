@@ -73,7 +73,7 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-family: 'Inter', sans-serif;
-    font-size: var(--md);
+    font-size: var(--lg);
 }
 
 /* ----------------------navbar---------------------------------*/
@@ -176,6 +176,7 @@ a {
     padding-bottom: 25px;
     text-align: justify;
     line-height: 1.4;
+    font-size: var(--lg);
     font-weight: normal;
 }
 
